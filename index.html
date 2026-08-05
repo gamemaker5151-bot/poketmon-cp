@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!-- HTML5 문서라는 것을 브라우저에 알려줌 -->
+<html lang="ko">
+
+<head>
+
+    <!-- 한글이 깨지지 않도록 설정 -->
+    <meta charset="UTF-8">
+
+    <!-- 휴대폰 화면에 맞게 자동 크기 조절 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 브라우저 탭에 표시될 제목 -->
+    <title>Pokemon GO CP 계산기</title>
+
+    <!-- style.css 파일을 불러옴 -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- 전체 화면을 감싸는 박스 -->
+    <!-- ========================= -->
+
+    <div class="container">
+
+        <!-- 제목 -->
+        <h1>
+            Pokémon GO
+            <br>
+            진화 CP 계산기
+        </h1>
+
+        <!-- 설명 -->
+        <p class="description">
+
+            기본 포켓몬의 정보를 입력하면
+            <br>
+            최종 진화 CP를 계산합니다.
+
+        </p>
+
+        <hr>
+
+        <!-- ===================== -->
+        <!-- 포켓몬 선택 -->
+        <!-- ===================== -->
+
+        <label>
+
+            포켓몬 선택
+
+        </label>
+
+        <select id="pokemon">
+
+            <option value="">
+                선택하세요
+            </option>
+
+            <option value="litwick">
+                불켜미
+            </option>
+
+            <option value="swinub">
+                꾸꾸리
+            </option>
+
+            <option value="vulpix">
+                식스테일
+            </option>
+
+        </select>
+
+        <br><br>
+
+        <!-- ===================== -->
+        <!-- 현재 CP -->
+        <!-- ===================== -->
+
+        <label>
+
+            현재 CP
+
+        </label>
+
+        <input
+            type="number"
+            id="cp"
+            placeholder="예 : 659"
+        >
+
+        <br><br>
+
+        <!-- ===================== -->
+        <!-- 현재 HP -->
+        <!-- ===================== -->
+
+        <label>
+
+            현재 HP
+
+        </label>
+
+        <input
+            type="number"
+            id="hp"
+            placeholder="예 : 98"
+        >
+
+        <br><br>
+
+        <!-- ===================== -->
+        <!-- 공격 IV -->
+        <!-- ===================== -->
+
+        <label>
+
+            공격 IV
+
+        </label>
+
+        <input
+            type="number"
+            id="atk"
+            min="0"
+            max="15"
+        >
+
+        <br><br>
+
+        <!-- 방어 IV -->
+
+        <label>
+
+            방어 IV
+
+        </label>
+
+        <input
+            type="number"
+            id="def"
+            min="0"
+            max="15"
+        >
+
+        <br><br>
+
+        <!-- 체력 IV -->
+
+        <label>
+
+            체력 IV
+
+        </label>
+
+        <input
+            type="number"
+            id="sta"
+            min="0"
+            max="15"
+        >
+
+        <br><br>
+
+        <!-- 계산 버튼 -->
+
+        <button id="calculate">
+
+            계산하기
+
+        </button>
+
+        <hr>
+
+        <!-- ===================== -->
+        <!-- 결과창 -->
+        <!-- ===================== -->
+
+        <div id="result">
+
+            <h2>
+
+                계산 결과
+
+            </h2>
+
+            <p>
+
+                아직 계산되지 않았습니다.
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- ===================== -->
+    <!-- JavaScript 연결 -->
+    <!-- ===================== -->
+
+    <!-- 포켓몬 데이터 -->
+    <script src="pokemon.js"></script>
+
+    <!-- 계산 코드 -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
