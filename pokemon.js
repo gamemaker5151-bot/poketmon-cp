@@ -12,60 +12,18 @@ const pokemonData = {
     // ==========================
     litwick:{
 
-        // 화면에 표시될 이름
-        name:"불켜미",
+    name:"불켜미",
 
-        // 최종 진화 이름
-        finalName:"샹델라",
+    baseAttack:108,
+    baseDefense:98,
+    baseStamina:137,
 
-        // 최종 진화 종족값
-        attack:271,
-        defense:182,
-        stamina:155,
+    finalName:"샹델라",
 
-        // 진화 단계
-        evolution:2
+    finalAttack:271,
+    finalDefense:182,
+    finalStamina:155
 
-    },
-
-    // ==========================
-    // 꾸꾸리
-    // ==========================
-
-    swinub:{
-
-        name:"꾸꾸리",
-
-        finalName:"맘모꾸리",
-
-        attack:247,
-
-        defense:146,
-
-        stamina:242,
-
-        evolution:2
-
-    },
-
-    // ==========================
-    // 식스테일
-    // ==========================
-
-    vulpix:{
-
-        name:"식스테일",
-
-        finalName:"나인테일",
-
-        attack:169,
-
-        defense:190,
-
-        stamina:177,
-
-        evolution:1
-
-    }
-
+}
+    
 };
